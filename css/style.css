@@ -71,6 +71,7 @@ img {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .cards {
         width: calc( (100% / 3) - 2rem );
@@ -80,3 +81,30 @@ img {
         width: calc( (100% / 3 * 2) - 2rem);
     }
 }
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 792px;
+    }
+    .card {
+       margin: 0px;
+    }
+    .card-big {
+        display: flex;
+    }
+    .big-left {
+        text-align: start;
+        width: 60%;
+    }
+    #demo-application .card img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+    
+}
+

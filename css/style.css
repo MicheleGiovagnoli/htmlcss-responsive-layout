@@ -46,7 +46,7 @@ header {
 
 .card {
     width: 100%;
-    margin: 0px auto;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -68,114 +68,118 @@ header {
 img {
     max-width: 100%;
 }
-.strategic-planing {
-    background-color: var(--third-color);
-}
+
 /************************************************
     SITE SECTIONS
  ************************************************/
- header .container {
-    padding: 0.5rem 0rem;
-    color: white; 
- }
+    /* NAV BAR */
+    header .container {
+        padding: 0.5rem 0rem;
+        color: white; 
+    }
+    .nav ul{
+        display: none;
+        align-items: center;
+    }
+    .nav ul button{
+        padding:0.5rem;
+        border: none;
+        border-radius: 1rem;
+    }
+    .nav ul li{
+        padding-left: 1rem;
+        list-style-type: none;
+    }
 
- .demo-application .card {
-    background-color: var(--second-color);
-    margin: 2rem 0rem;
- }
- .strategic-planing .card {
-    margin: 2rem 0rem;
- }
- 
- .testimonials .card{
-    margin: 2rem 0rem;
- }
+    /* DEMO-APPLICATION */
+    .demo-application .card {
+        background-color: var(--second-color);
+        
+    }
 
- /* NAV BAR */
- .nav ul{
-    display: none;
-    align-items: center;
- }
- .nav ul button{
-    padding:0.5rem;
-    border: none;
-    border-radius: 1rem;
- }
- .nav ul li{
-    padding-left: 1rem;
-    list-style-type: none;
-}
+    /* STRATEGIC-PLANING */
+    .strategic-planing  {
+        padding: 2rem 0rem;
+    }
+
+    /* TESTIMONIALS */
+   
+
+    /* BENEFIT-WORKING */
+    .benefit-working {
+        padding: 2rem 0rem;
+    }
 /************************************************
     RESPONSIVE
  ************************************************/
-@media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
 
-    .container {
-        width: 728px;
-    }
+            .container {
+                width: 728px;
+            }
 
-    .demo-application .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+            .demo-application .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
 
-    .demo-application .card {
-        width: calc( (100% / 3) - 2rem );
-        margin: 1rem 0rem;
-    }
+            .demo-application .card {
+                width: calc( (100% / 3) - 2rem );
+                margin: 1rem 0rem;
+            }
 
-    .demo-application .card:first-child {
-        width: calc( (100% / 3 * 2) - 1rem);
-    }
+            .demo-application .card:first-child {
+                width: calc( (100% / 3 * 2) - 1rem);
+            }
 
-}
+        }
 
-@media screen and (min-width: 992px) {
+        @media screen and (min-width: 992px) {
 
-    .container {
-        width: 930px;
-    }
+            .container {
+                width: 930px;
+            }
 
-    .nav ul{
-        display: flex;
-    }
-    
-    .header-right i {
-        display: none;
-    }
-   
-    .demo-application .card-big {
-        display: flex;
-    }
+            .nav ul{
+                display: flex;
+            }
+            
+            .header-right i {
+                display: none;
+            }
+        
+            .demo-application .card-big {
+                display: flex;
+            }
 
-    .demo-application .big-left {
-        text-align: start;
-        width: 60%;
-    }
+            .demo-application .big-left {
+                text-align: start;
+                width: 60%;
+            }
 
-    .demo-application .card img {
-        width: 40%;
-    }
+            .demo-application .card img {
+                width: 40%;
+            }
 
-    .strategic-planing .container {
-        display: flex;
-        justify-content: center;
-    }
+            .strategic-planing .container {
+                display: flex;
+                justify-content: center;
+            }
 
-    .strategic-planing .cards {
-        display: flex;
-    }
+            .strategic-planing .cards {
+                display: flex;
+            }
 
-    .strategic-planing .card:last-child {
-        margin-top: 30px;
-    }
-}
+            .strategic-planing .card:last-child {
+                margin-top: 30px;
+            }
+        }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1160px;
-    }
-    
-}
+        @media screen and (min-width: 1200px) {
+            .container {
+                width: 1160px;
+            }
+            
+        }
 

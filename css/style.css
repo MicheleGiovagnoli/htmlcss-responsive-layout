@@ -13,6 +13,7 @@
     --third-color : rgb(151, 146, 228);
     --fourth-color : white;
     --fifth-color : rgb(90, 110, 127);
+    --sixth-color : black;
 }
 .bg-primary {
     background-color: var(--primary-color);
@@ -27,7 +28,7 @@
     background-color: var(--fourth-color);
 }
 .bg-black {
-    background-color: black;
+    background-color: var(--sixth-color);
 }
 /************************************************
     UTILITIES
@@ -70,37 +71,49 @@ header {
     justify-content: center;
 }
 img {
-    max-width: 80%;
+    max-width: 100%;
 }
 .padding {
     padding: 1rem 0rem;
 }
-
+.button {
+    padding:0.8rem;
+    border: none;
+    border-radius: 2rem;
+}
+.title {
+    text-align: center;
+}
 /************************************************
     SITE SECTIONS
  ************************************************/
     /* NAV BAR */
     header .container {
         padding: 0.5rem 0rem;
-        color: white; 
+        color: var(--fourth-color); 
     }
+
     .nav ul{
         display: none;
         align-items: center;
-    }
-    .nav ul button{
-        padding:0.5rem;
-        border: none;
-        border-radius: 1rem;
     }
     .nav ul li{
         padding-left: 1rem;
         list-style-type: none;
     }
+    .nav ul li a{
+        text-decoration: none;
+        color: var(--fourth-color);
+    }
+    .nav ul li .button {
+        background-color: var(--fourth-color);
+        color: var(--sixth-color);
+    }
 
     /* DEMO-APPLICATION */
     .demo-application .card {
         background-color: var(--second-color);
+        padding-bottom: 0rem;
     }
     .demo-application .card .fa-solid {
         font-size: 5rem;
@@ -112,6 +125,19 @@ img {
     .demo-application .card p {
         color: var(--fifth-color);
     }
+    .demo-application .button {
+        background-color: var(--primary-color);
+        color: var(--fourth-color);
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1rem;
+        word-spacing: 0.2rem;
+    }
+    .demo-application .card img {
+        padding-top: 5rem;
+        align-self: flex-end;
+        display: block;
+        margin: 0rem auto;
+    }
     
 
     /* STRATEGIC-PLANNING */
@@ -120,9 +146,6 @@ img {
     }
     .strategic-planning .planning-card {
         color: var(--fourth-color);
-    }
-    .strategic-planning .planning-card img{
-        margin-left: 10%;
     }
     .strategic-planning .card button {
         border-radius: 50%;
@@ -133,19 +156,82 @@ img {
     }
 
     /* TESTIMONIALS */
+    .testimonials .card .circle {  
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    .testimonials .card img {
+        width: 200px;
+        height: 200px;   
+        border-radius: 50%;
+    }
+    .testimonials .card {
+        color: var(--fourth-color);
+    }
+    .testimonials .card:first-child{
+        color: var(--sixth-color);
+    }
+    .testimonials .title:first-child h2 {
+        color: var(--third-color);
+    }
    
 
     /* BENEFIT-WORKING */
     .benefit-working {
         padding: 2rem 0rem;
     }
-    .benefit-working .title {
+    .benefit-working .card {
+        text-align: unset;
+        color: var(--third-color);
+    }
+    .benefit-working .card span {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .benefit-working .card .button {
+        background-color: var(--third-color);
+        color: var(--fourth-color);
+        width: 10rem;
         text-align: center;
     }
 
+    /* About Us */
+    .about-us .card {
+        text-align: unset;
+        position: relative;
+        padding-left: 0rem;
+    }
+    .about-us .card .color{
+        color: var(--third-color);
+    }
+    .about-us .card img {
+        width: 200px;
+        height: 200px;   
+        border-radius: 50%;
+    }
+    .about-us .card .circle i {
+        position: absolute;
+        font-size: 5rem;
+        left: 10rem;
+    }
+    .about-us .card .button {
+        background-color: var(--third-color);
+        color: var(--fourth-color);
+        width: 12rem;
+        text-align: center;
+        padding: 0.2rem;
+    }
+    .about-us .card p {
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+
+
     /* FOOTER */
     footer {
-        color: white;
+        color: var(--fourth-color);
         text-align: center;
         margin: auto;
     }
@@ -173,6 +259,9 @@ img {
             .demo-application .card:first-child {
                 width: calc( (100% / 3 * 2) - 1rem);
             }
+            .demo-application .card-big {
+                padding-bottom: 0rem;
+            }
             
             /* BENEFIT-WORKING */
             .benefit-working .cards {
@@ -185,7 +274,26 @@ img {
                 width: calc( (100% / 2) - 2rem);
                 margin: 1rem 0rem;
             }
-            
+
+            /* TESTIMONIALS */
+            .testimonials .card {
+                display: flex;
+              
+            }
+            .testimonials .card .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 2rem;
+            }
+            .testimonials .card img{
+                max-width: none;
+            }
+            .testimonials .card .text .name{
+                text-align: start;
+                vertical-align: middle;
+            }
+
             /* ABOUT-US */
             .about-us .cards {
                 display: flex;
@@ -196,7 +304,7 @@ img {
         @media screen and (min-width: 992px) {
 
             .container {
-                width: 830px;
+                width: 930px;
             }
             
             /* NAV BAR */
@@ -211,6 +319,7 @@ img {
             /* DEMO-APPLICATION */
             .demo-application .card-big {
                 display: flex;
+                padding-bottom: 0;
             }
 
             .demo-application .big-left {

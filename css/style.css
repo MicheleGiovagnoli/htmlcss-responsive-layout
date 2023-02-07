@@ -109,6 +109,14 @@ img {
     .benefit-working {
         padding: 2rem 0rem;
     }
+    .benefit-working .title {
+        text-align: center;
+    }
+    footer {
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
 /************************************************
     RESPONSIVE
  ************************************************/
@@ -131,6 +139,19 @@ img {
 
             .demo-application .card:first-child {
                 width: calc( (100% / 3 * 2) - 1rem);
+            }
+
+            .benefit-working .cards {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .benefit-working .card {
+                width: calc( (100% / 2) - 2rem);
+                margin: 1rem 1rem;
+            }
+            .about-us .cards {
+                display: flex;
             }
 
         }

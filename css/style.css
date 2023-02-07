@@ -112,6 +112,8 @@ img {
     .benefit-working .title {
         text-align: center;
     }
+
+    /* FOOTER */
     footer {
         color: white;
         text-align: center;
@@ -125,7 +127,8 @@ img {
             .container {
                 width: 728px;
             }
-
+            
+            /* DEMO-APPLICATION */
             .demo-application .cards {
                 display: flex;
                 flex-wrap: wrap;
@@ -140,16 +143,20 @@ img {
             .demo-application .card:first-child {
                 width: calc( (100% / 3 * 2) - 1rem);
             }
-
+            
+            /* BENEFIT-WORKING */
             .benefit-working .cards {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
             }
 
             .benefit-working .card {
                 width: calc( (100% / 2) - 2rem);
-                margin: 1rem 1rem;
+                margin: 1rem 0rem;
             }
+            
+            /* ABOUT-US */
             .about-us .cards {
                 display: flex;
             }
@@ -161,7 +168,8 @@ img {
             .container {
                 width: 930px;
             }
-
+            
+            /* NAV BAR */
             .nav ul{
                 display: flex;
             }
@@ -169,7 +177,8 @@ img {
             .header-right i {
                 display: none;
             }
-        
+            
+            /* DEMO-APPLICATION */
             .demo-application .card-big {
                 display: flex;
             }
@@ -182,7 +191,8 @@ img {
             .demo-application .card img {
                 width: 40%;
             }
-
+            
+            /* STRATEGIC-PLANING */
             .strategic-planing .container {
                 display: flex;
                 justify-content: center;
@@ -192,8 +202,17 @@ img {
                 display: flex;
             }
 
-            .strategic-planing .card:last-child {
-                margin-top: 30px;
+            .strategic-planing .card{
+                margin-bottom: 0rem;
+            }
+            .strategic-planing .card:first-child{
+                margin-top: 0rem;
+            }
+
+            /* BENEFIT-WORKING */
+            .benefit-working .card {
+                width: calc( (100% / 3) - 2rem);
+                margin: 1rem 0rem;
             }
         }
 

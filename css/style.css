@@ -12,6 +12,7 @@
     --second-color : rgb(181, 221, 255) ;
     --third-color : rgb(151, 146, 228);
     --fourth-color : white;
+    --fifth-color : rgb(90, 110, 127);
 }
 .bg-primary {
     background-color: var(--primary-color);
@@ -47,7 +48,10 @@ header {
 .card {
     width: 100%;
     margin: 2rem auto;
+    padding: 2rem 2rem;
     text-align: center;
+    border-radius: 3rem;
+    line-height: 2rem;
 }
 
 .flex {
@@ -66,7 +70,10 @@ header {
     justify-content: center;
 }
 img {
-    max-width: 100%;
+    max-width: 80%;
+}
+.padding {
+    padding: 1rem 0rem;
 }
 
 /************************************************
@@ -94,12 +101,35 @@ img {
     /* DEMO-APPLICATION */
     .demo-application .card {
         background-color: var(--second-color);
-        
     }
+    .demo-application .card .fa-solid {
+        font-size: 5rem;
+        color: var(--primary-color);
+    }
+    .demo-application .card h2 {
+        color: var(--primary-color);
+    }
+    .demo-application .card p {
+        color: var(--fifth-color);
+    }
+    
 
-    /* STRATEGIC-PLANING */
-    .strategic-planing  {
+    /* STRATEGIC-PLANNING */
+    .strategic-planning  {
         padding: 2rem 0rem;
+    }
+    .strategic-planning .planning-card {
+        color: var(--fourth-color);
+    }
+    .strategic-planning .planning-card img{
+        margin-left: 10%;
+    }
+    .strategic-planning .card button {
+        border-radius: 50%;
+        border: none;
+        background-color: var(--third-color);
+        width: 3rem;
+        height: 3rem;
     }
 
     /* TESTIMONIALS */
@@ -166,7 +196,7 @@ img {
         @media screen and (min-width: 992px) {
 
             .container {
-                width: 930px;
+                width: 830px;
             }
             
             /* NAV BAR */
@@ -192,21 +222,28 @@ img {
                 width: 40%;
             }
             
-            /* STRATEGIC-PLANING */
-            .strategic-planing .container {
+            /* STRATEGIC-PLANNING */
+            .strategic-planning .container {
                 display: flex;
                 justify-content: center;
             }
 
-            .strategic-planing .cards {
+            .strategic-planning .cards {
                 display: flex;
             }
 
-            .strategic-planing .card{
+            .strategic-planning .card{
                 margin-bottom: 0rem;
             }
-            .strategic-planing .card:first-child{
-                margin-top: 0rem;
+            .strategic-planning .planning-card {
+                padding: 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+            }
+            .strategic-planning .card:last-child {
+                margin-top: 10rem;
             }
 
             /* BENEFIT-WORKING */

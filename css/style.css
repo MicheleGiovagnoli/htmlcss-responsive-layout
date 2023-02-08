@@ -6,6 +6,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
 
 :root {
     --primary-color : rgb(0, 132, 253) ;
@@ -27,8 +31,8 @@
 .bg-fourth {
     background-color: var(--fourth-color);
 }
-.bg-black {
-    background-color: var(--sixth-color);
+.bg-grey {
+    background-color: rgb(51, 51, 51);
 }
 /************************************************
     UTILITIES
@@ -156,11 +160,6 @@ img {
     }
 
     /* TESTIMONIALS */
-    .testimonials .card .circle {  
-        width: 200px;
-        height: 200px;
-        margin: auto;
-    }
     .testimonials .card img {
         width: 200px;
         height: 200px;   
@@ -227,8 +226,22 @@ img {
         font-size: 2rem;
     }
 
+    /* GET STARTED */
+    .get-started .card {
+        color: var(--fourth-color);
+    }
 
-
+    .get-started .card h2 {
+        color: orange;
+        font-size: 50px;
+    }
+    .get-started .card span {
+        font-weight: lighter;
+    }
+    .get-started .card .button {
+        background-color: var(--fourth-color);
+        color: var(--third-color);
+    }
     /* FOOTER */
     footer {
         color: var(--fourth-color);
